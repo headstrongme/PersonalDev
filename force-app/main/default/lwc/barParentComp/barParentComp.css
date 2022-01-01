@@ -1,0 +1,19 @@
+.btn{
+    border : none;
+    color :white;
+    padding : 14px 28px;
+    cursor : pointer;
+    background: #2196f3;
+}
+.parentWrapper{
+    padding: 10px;
+    border: 5px solid #00a1e0;
+
+}
+
+.childWrapper{
+    padding: 10px;
+    border: 2px solid #134457;
+    margin :10px;
+    
+}

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Calling child menthod from parent" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <div class="parentWrapper">
+                <button class="btn" onclick={changeColor}>
+                    Click me to change color
+                </button>
+            </div>  
+            <div class="childWrapper">
+                <c-bar-child-comp>
+                    
+                </c-bar-child-comp>
+            </div>
+        </div>
+        
+    </lightning-card>
+</template>

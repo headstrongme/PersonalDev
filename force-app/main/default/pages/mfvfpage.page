@@ -1,0 +1,7 @@
+<apex:page standardController="Account" extensions="controllerEXT" >
+ <apex:pageBlock title="Testing title">
+    <apex:pageBlockSection >
+    {!ext1m1}
+    </apex:pageBlockSection>
+ </apex:pageBlock>
+</apex:page>

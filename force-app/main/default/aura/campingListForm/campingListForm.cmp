@@ -1,0 +1,32 @@
+<aura:component >
+    <aura:registerEvent name="addItem" type="c:addItemEvent"/>
+	 <!-- CREATE NEW EXPENSE FORM -->
+        <form class="slds-form--stacked">          
+            <lightning:input aura:id="campingform" label="Name"
+                             name="newItemName"
+                             value="{!v.newItem.Name}"
+                             required="true"/> 
+            <lightning:input type="number" aura:id="campingform" label="Quantity"
+                             name="Quantity"
+                             min="1"
+                             value="{!v.newItem.Quantity__c}"
+                             messageWhenRangeUnderflow="Enter quantity"/>
+            <lightning:input type="number"
+                             aura:id="campingform" label="Price"
+                             name="Price"
+                             min="0.1"
+                             formatter="currency"
+                             step="0.01"
+                             value="{!v.newItem.Price__c}"
+                             />
+            
+            <lightning:input type="checkbox" aura:id="campingform" label="Packed ?"  
+                             name="Packed"
+                             checked="{!v.newItem.Packed__c}"/>
+            <lightning:button label="Create Item" 
+                              class="slds-m-top--medium"
+                              variant="brand"
+                              onclick="{!c.clickCreateItem}"/>
+        </form>
+        <!-- / CREATE NEW EXPENSE FORM -->
+</aura:component>

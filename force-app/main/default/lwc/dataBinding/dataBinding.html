@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="One Way data Bingding example" icon-name="custom:custom1" >
+        <div class="slds-p-around_medium">
+            <h2>My Name is {firstName}</h2>
+        </div>
+      
+    </lightning-card>
+
+    <lightning-card title="Two Way data Bingding example" icon-name="custom:custom2" >
+        <div class="slds-p-around_medium">
+            <lightning-input 
+            type="text" 
+            title="name"
+            label="Enter Your Last Name"
+            value={lastName}
+            onkeyup={changehandler}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium">
+            <h2>My Full Name is {firstName} {lastName}</h2>
+        </div>
+    </lightning-card>
+
+</template>

@@ -1,0 +1,22 @@
+<template>
+    
+    <lightning-card title="if True example" icon-name="custom:custom18" >
+        <div class="slds-p-around_medium">
+            <button class="slds-button slds-button_success" onclick={showHandler}>Click me to show the text</button>
+            <template if:true={showText}>
+              <h3>  You have unhiden text. </h3>
+            </template>
+        </div>
+      
+    </lightning-card>
+
+    <lightning-card title="Toggle example" icon-name="custom:custom19" >
+        <div class="slds-p-around_medium">
+            <button class="slds-button slds-button_brand" onclick={toggleHandler}>Click me to toggle</button>
+            <template if:false={toggleText}>
+              <h3>  lets play Hind and Seek </h3>
+            </template>
+        </div>
+      
+    </lightning-card>
+</template>
